@@ -1,0 +1,12 @@
+{
+  "name": "InteriorVista",
+  "description": "AI-powered interior design assistant for room stabilization and style suggestions.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "AI Design Suggestions",
+    "Room Image Analysis",
+    "Real-time Chat Assistant"
+  ]
+}

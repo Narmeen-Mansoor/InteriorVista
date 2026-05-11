@@ -1,11 +1,35 @@
-<div align="center">
+# InteriorVista - AI Interior Design Assistant
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+InteriorVista is a production-ready web application that helps users visualize their dream spaces using Google's Gemini AI. 
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **AI Room Analysis**: Upload a photo of any room and receive style, furniture, and color suggestions.
+- **Interactive AI Chat**: Talk to a specialized interior design chatbot for instant advice.
+- **Saved Designs**: Manage and revisit your previous design generation projects.
+- **Firebase Auth**: Secure login via email or Google.
+- **Responsive Design**: Polished experience on both desktop and mobile.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- **Frontend**: React, Vite, Framer Motion, Lucide Icons, Tailwind CSS
+- **AI**: Google Gemini API
+- **Backend/Auth**: Firebase Firestore & Authentication
+- **Utilities**: Axios, clsx, tailwind-merge
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Deployment on Vercel
 
-</div>
+1. **Prerequisites**: Ensure you have a Firebase project and a Google Gemini API Key.
+2. **Push to GitHub**: Fork this repository and commit your changes.
+3. **Connect to Vercel**: Import the repository into Vercel.
+4. **Environment Variables**: Add the following variables in the Vercel dashboard:
+   - `GEMINI_API_KEY`: Your Google AI Studio key.
+   - `VITE_FIREBASE_API_KEY`: (If you use standard Vite env) Or just ensure the `firebase-applet-config.json` is included.
+5. **Build Command**: `npm run build`
+6. **Output Directory**: `dist`
+
+## Setup & Local Development
+```bash
+npm install
+npm run dev
+```
+
+*Note: This app is configured for port 3000 and binding to 0.0.0.0 for development environments.*
